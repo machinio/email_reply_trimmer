@@ -18,7 +18,7 @@ class EmbeddedEmailMatcher
     /^[[:blank:]<>-]*Op (?:(?!\b(?>Op|het\svolgende\sgeschreven|schreef)\b).)+?(het\svolgende\sgeschreven|schreef[^:]+)[[:blank:].:>-]*$/im,
     # English
     /^[[:blank:]<>-]*In message (?:(?!\b(?>In message|writes)\b).)+?writes[[:blank:].:>-]*$/im,
-    /^[[:blank:]<>-]*(On|At) (?:(?!\b(?>On|wrote|writes|says|said)\b).)+?(wrote|writes|says|said)[[:blank:].:>-]*$/im,
+    /^[[:blank:]<>-]*(On|At) (?:(?!\b(?>On|wrote|writes|says|said|responded)\b).)+?(wrote|writes|says|said|responded)[[:blank:].:>-]*$/im,
     # French
     /^[[:blank:]<>-]*Le (?:(?!\b(?>Le|nous\sa\sdit|a\s+écrit)\b).)+?(nous\sa\sdit|a\s+écrit)[[:blank:].:>-]*$/im,
     # German
