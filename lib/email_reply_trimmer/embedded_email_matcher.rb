@@ -28,6 +28,7 @@ class EmbeddedEmailMatcher
     /^[[:blank:]<>-]*Il (?:(?!\b(?>Il|ha\sscritto)\b).)+?ha\sscritto[[:blank:].:>-]*$/im,
     # Polish
     /^[[:blank:]<>-]*(Dnia|Dňa) (?:(?!\b(?>Dnia|Dňa|napisał)\b).)+?napisał(\(a\))?[[:blank:].:>-]*$/im,
+    /^[[:blank:]<>-]*(W\sdniu) (?:(?!\b(?>W\sdniu|pisze)\b).)+?pisze[[:blank:].:>-]*$/im,
     # Portuguese
     /^[[:blank:]<>-]*Em (?:(?!\b(?>Em|escreveu)\b).)+?escreveu[[:blank:].:>-]*$/im,
     # Spanish
@@ -129,6 +130,8 @@ class EmbeddedEmailMatcher
     /^[[:blank:]>*]*-{2,}[[:blank:]]*Mensaje original[[:blank:]]*-{2,}/i,
     # Chinese
     /^[[:blank:]>*]*-{2,}[[:blank:]]*原始邮件[[:blank:]]*-{2,}/i,
+    # Romanian
+    /^[[:blank:]>*]*-{2,}[[:blank:]]*Mesajul original[[:blank:]]*-{2,}/i
   ]
 
   EMBEDDED_REGEXES = [
